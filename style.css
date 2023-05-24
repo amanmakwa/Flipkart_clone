@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+#nav{
+    border: 1px solid red;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main-content{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
