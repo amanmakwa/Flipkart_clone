@@ -1,17 +1,58 @@
+:root{
+  --blue-color:#2874f0;
+  --white-color:white;
+  --yellow-color:#ffe11b;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
 #nav{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: var(--blue-color);
 }
 .main-content{
     display: flex;
+    /* border: 1px solid black; */
     width: auto;
     justify-content: space-between;
+}
+.home-link{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    >.flipkart-first-div{
+        width: 45%;
+        height: 100%;
+    }
+    >.flipkart-second-div{
+        display: inline-flexbox;
+        overflow: hidden;
+        width: 55%;
+    
+        .explore-link{
+            font-size: 11px;
+            font-style: italic;
+            margin-top: -1px;
+            text-decoration: none;
+            color: var(--white-color);
+
+            >span{
+                color: var(--yellow-color);
+            }
+            
+            }
+            .explore-link:hover{
+                text-decoration: underline;
+            }
+    }
+  
 }
